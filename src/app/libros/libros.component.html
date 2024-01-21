@@ -1,0 +1,10 @@
+<p>libros works!</p>
+
+<ul>
+    <li *ngFor="let libro of libros">
+    <!--  forma de 4.2 <a (click)="showAuthor(libro)">--> 
+        <a [routerLink]="['/informacion']">
+        {{libro.titulo}}
+    </a>
+    </li>
+</ul>
